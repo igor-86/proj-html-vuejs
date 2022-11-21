@@ -3,6 +3,8 @@
 import { store } from "./store";
 import AppMenuNav from './components/AppMenuNav.vue';
 import AppFooter from './components/AppFooter.vue';
+import AppToHome from "./components/AppToHome.vue";
+
 export default {
   name: "AppVue",
   data() {
@@ -13,6 +15,7 @@ export default {
   },
   components: {
     AppMenuNav,
+    AppToHome,
     AppFooter
   },
 
@@ -22,7 +25,9 @@ export default {
 <template>
   <header>
     <AppMenuNav />
+    <AppToHome />
   </header>
+
 
   <footer>
     <AppFooter />
