@@ -4,6 +4,7 @@ import { store } from "./store";
 import AppMenuNav from './components/AppMenuNav.vue';
 import AppFooter from './components/AppFooter.vue';
 import AppToHome from "./components/AppToHome.vue";
+import JumboFounder from "./components/JumboFounder.vue";
 
 export default {
   name: "AppVue",
@@ -16,7 +17,8 @@ export default {
   components: {
     AppMenuNav,
     AppToHome,
-    AppFooter
+    AppFooter,
+    JumboFounder,
   },
 
 }
@@ -27,7 +29,9 @@ export default {
     <AppMenuNav />
     <AppToHome />
   </header>
-
+  <main>
+    <JumboFounder />
+  </main>
 
   <footer>
     <AppFooter />
