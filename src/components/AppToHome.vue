@@ -1,11 +1,12 @@
 <script>
+import FormHome from './FormHome.vue';
 export default {
     name: "AppToHome",
     data() {
 
     },
     components: {
-
+        FormHome
     },
 }
 </script>
@@ -19,6 +20,8 @@ export default {
             <p>A wonderful serenity as taken possession of my entire soul, like these sweet mornings of spring wich I
                 enjoy with my whole heart</p>
         </div>
+        <FormHome />
+
     </div>
 
 </template>
