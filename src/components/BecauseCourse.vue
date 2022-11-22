@@ -69,6 +69,21 @@ export default {
             justify-content: center;
             box-shadow: 5px 8px 13px -4px rgba(0, 0, 0, 0.2);
 
+            &:hover {
+                box-shadow: none;
+                cursor: pointer;
+                background-color: $first-color;
+
+                &>i {
+                    color: white;
+                }
+
+                & .text-why>p {
+                    color: black;
+                }
+
+
+            }
 
             &::after {
                 content: '';

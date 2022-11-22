@@ -1,13 +1,17 @@
 <script>
 import { store } from '../store';
 export default {
-    name: "NewCourses",
+    name: "CursesNew",
     data() {
-        store
+        return {
+            store
+        }
     },
-    components: {
-
-    },
+    methods: {
+        getImage(url) {
+            return new URL(url, import.meta.url).href;
+        }
+    }
 }
 </script>
 
@@ -16,13 +20,16 @@ export default {
         <div class="container">
             <h2>New Courses</h2>
             <div class="wrapper">
-                <div class="card-course" v-for="inner in 6">
+                <div class="card-course" v-for="(card, index) in store.courseTop" :key="index">
                     <div class="img-curses">
-                        <img src="../assets/img/course1.jpeg" alt="course">
+                        <img :src="getImage(`../assets/img/${card.image}`)" alt="foto">
+                        <div class="prize">
+                            <h3>$59</h3>
+                        </div>
                     </div>
                     <div class="text-curse">
-                        <h3>How to be a Dj? Make Eletronic music</h3>
-                        <p>Electonic</p>
+                        <h3>{{ card.title }}</h3>
+                        <p>{{ card.sub }}</p>
                     </div>
                     <div class="info-curse">
                         <div class="single">
@@ -31,7 +38,7 @@ export default {
                         </div>
                         <div class="single">
                             <i class="fa-solid fa-list-ul"></i>
-                            <p>6 lectures</p>
+                            <p>{{ card.lect }}lectures</p>
                         </div>
                         <div class="single">
                             <i class="fa-regular fa-clock"></i>
@@ -55,22 +62,34 @@ export default {
     padding: 4rem 0;
     position: relative;
 
+
+
     .img-curses {
         position: relative;
         width: 100%;
 
-        &::after {
-            content: 'Special';
+
+        .prize {
             position: absolute;
-            text-transform: uppercase;
-            padding: .6rem .5rem;
-            background-color: $first-color;
-            color: white;
-            font-weight: 700;
-            right: 10px;
-            top: 10px;
-            border-radius: 4px;
+            width: 100%;
+            background-color: #00000093;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            visibility: hidden;
+
+
+            h3 {
+                color: white;
+                font-weight: 700;
+                font-size: $title-small;
+            }
         }
+
     }
 
     h2 {
@@ -85,11 +104,37 @@ export default {
         width: calc(100% / 3 - 2rem);
         border: 1px solid #cccccc;
         background-color: white;
+        position: relative;
+        cursor: pointer;
+
+        &:nth-child(-n+3) {
+            &::after {
+                content: 'Special';
+                position: absolute;
+                text-transform: uppercase;
+                padding: .6rem .5rem;
+                background-color: $first-color;
+                color: white;
+                font-weight: 700;
+                right: 10px;
+                top: 10px;
+                border-radius: 4px;
+                z-index: 100;
+            }
+        }
+
+        &:hover .prize {
+            visibility: visible;
+
+
+        }
 
 
         .text-curse {
             text-align: center;
             padding: 2rem 0;
+            width: 80%;
+            margin: 0 auto;
 
             h3 {
                 font-weight: 800;
@@ -138,6 +183,11 @@ export default {
         font-weight: 700;
         margin: 0 auto;
         cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+        }
     }
 }
 </style>

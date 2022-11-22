@@ -5,11 +5,12 @@ import AppMenuNav from './components/AppMenuNav.vue';
 import AppFooter from './components/AppFooter.vue';
 import AppToHome from "./components/AppToHome.vue";
 import JumboFounder from "./components/JumboFounder.vue";
-import NewCourses from "./components/NewCourses.vue";
+
 import JumboBook from "./components/JumboBook.vue";
 import BecauseCourse from "./components/BecauseCourse.vue";
 import JumboNet from "./components/JumboNet.vue";
 import StudentSay from "./components/StudentSay.vue";
+import CursesNew from "./components/CursesNew.vue";
 export default {
   name: "AppVue",
   data() {
@@ -23,11 +24,11 @@ export default {
     AppToHome,
     AppFooter,
     JumboFounder,
-    NewCourses,
     JumboBook,
     BecauseCourse,
     JumboNet,
     StudentSay,
+    CursesNew,
   },
 
 }
@@ -41,7 +42,7 @@ export default {
   <main>
     <JumboFounder />
     <section>
-      <NewCourses />
+      <CursesNew />
     </section>
     <JumboBook />
     <section>

@@ -87,6 +87,7 @@ export default {
             margin: 0 2rem;
             width: 60px;
             border-radius: 50%;
+            cursor: pointer;
 
             &.active {
                 transform: scale(1.5);

@@ -118,44 +118,13 @@ export const store = reactive({
                         }
                     ]
                 }
-            ]
+            ],
 
 
         },
 
     ],
-    arrayNewcourse: [
-        {
-            image: "course1.",
-            title: "How to be a DJ? Make Electronic Music",
-            sub: "Electronic",
-        },
-        {
-            image: "course2.",
-            title: "Nvidia and UE4 Technologies Practice",
-            sub: "Nvidia",
-        },
-        {
-            image: "course3.",
-            title: "Fashion Photography from professional",
-            sub: "fashion",
-        },
-        {
-            image: "course4.",
-            title: "Design instruments for Communication",
-            sub: "Communication",
-        },
-        {
-            image: "course5.",
-            title: "Make your Concept right and Beautiful",
-            sub: "Art",
-        },
-        {
-            image: "course6.",
-            title: "Road Bike Manual or How to Be a Champion",
-            sub: "Bicycling",
-        }
-    ],
+
     arrayCart: [
         {
             out: "fa-desktop"
@@ -231,5 +200,43 @@ export const store = reactive({
             title: "Protagonist of your future",
             art: "The goal is to grow in a working group that focuses on the enhancement of individual people. Accompanying everyone in achieving common and group goals."
         }
-    ]
+    ],
+    courseTop: [
+        {
+            image: "course1.jpeg",
+            title: "How to be a DJ? Make Electronic Music",
+            sub: "Electronic",
+            lect: 8,
+        },
+        {
+            image: "course2.png",
+            title: "Nvidia and UE4 Technologies Practice",
+            sub: "Nvidia",
+            lect: 8,
+        },
+        {
+            image: "course3.jpeg",
+            title: "Fashion Photography from professional",
+            sub: "fashion",
+            lect: 6,
+        },
+        {
+            image: "course4.jpeg",
+            title: "Design instruments for Communication",
+            sub: "Communication",
+            lect: 6,
+        },
+        {
+            image: "course5.jpg",
+            title: "Make your Concept right and Beautiful",
+            sub: "Art",
+            lect: 6,
+        },
+        {
+            image: "course6.jpeg",
+            title: "Road Bike Manual or How to Be a Champion",
+            sub: "Bicycling",
+            lect: 6,
+        }
+    ],
 });
