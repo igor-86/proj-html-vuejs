@@ -123,5 +123,62 @@ export const store = reactive({
 
         },
 
+    ],
+    arrayCart: [
+        {
+            out: "fa-desktop"
+        },
+        {
+            out: "fa-life-ring"
+        },
+        {
+            out: "fa-wrench"
+        },
+        {
+            out: "fa-cart-shopping"
+        },
+        {
+            out: "fa-mobile-screen"
+        }
+    ],
+    arrayWhyCourse: [
+        {
+            icon: "fa-briefcase",
+            title: "Entrepreneurship"
+        },
+        {
+            icon: "fa-rocket",
+            title: "Accelerated learning"
+        },
+        {
+            icon: "fa-thumbs-up",
+            title: "Productivity"
+        },
+        {
+            icon: "fa-gear",
+            title: "Life Coaching"
+        }
+    ],
+    arrayNet: [
+        {
+            icon: "fa-user",
+            number: 3165,
+            category: "Online Learner"
+        },
+        {
+            icon: "fa-clapperboard",
+            number: 23,
+            category: "Video Curses"
+        },
+        {
+            icon: "fa-image",
+            number: 437,
+            category: "Sliders & Images"
+        },
+        {
+            icon: "fa-thumbs-up",
+            number: 1140,
+            category: "Excellent reviews"
+        }
     ]
 });

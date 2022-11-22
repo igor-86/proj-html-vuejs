@@ -58,6 +58,7 @@ img {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    gap: 3rem 0;
 }
 
 .content {
@@ -66,7 +67,7 @@ img {
 
 /* GAP */
 .gap-1 {
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .gap-2 {
