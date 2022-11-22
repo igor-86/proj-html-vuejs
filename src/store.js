@@ -124,6 +124,38 @@ export const store = reactive({
         },
 
     ],
+    arrayNewcourse: [
+        {
+            image: "course1.",
+            title: "How to be a DJ? Make Electronic Music",
+            sub: "Electronic",
+        },
+        {
+            image: "course2.",
+            title: "Nvidia and UE4 Technologies Practice",
+            sub: "Nvidia",
+        },
+        {
+            image: "course3.",
+            title: "Fashion Photography from professional",
+            sub: "fashion",
+        },
+        {
+            image: "course4.",
+            title: "Design instruments for Communication",
+            sub: "Communication",
+        },
+        {
+            image: "course5.",
+            title: "Make your Concept right and Beautiful",
+            sub: "Art",
+        },
+        {
+            image: "course6.",
+            title: "Road Bike Manual or How to Be a Champion",
+            sub: "Bicycling",
+        }
+    ],
     arrayCart: [
         {
             out: "fa-desktop"
@@ -179,6 +211,25 @@ export const store = reactive({
             icon: "fa-thumbs-up",
             number: 1140,
             category: "Excellent reviews"
+        }
+    ],
+    slider: [
+        {
+            image: "avatar1.jpg",
+            title: "Great experience for me",
+            art: "I spent some intense months, where I met many beautiful people.Everything is organized very well, I could not have made a better choice. Recommended!",
+            title: "Paints of the future",
+
+        },
+        {
+            image: "avatar2.jpg",
+            title: "Paints of the future",
+            art: "The response to your MasterStudy has really overwhelming! Those who participated in the workshop are spreading the word here on campus and the 'buzz' is on. the VP of instruction wants you to come back! Her goals is to have more faculty trained. She also wants to attend a workshop herself. Our president told me Masterstudy needs to be the cornerstone of our success program."
+        },
+        {
+            image: "avatar3.jpg",
+            title: "Protagonist of your future",
+            art: "The goal is to grow in a working group that focuses on the enhancement of individual people. Accompanying everyone in achieving common and group goals."
         }
     ]
 });

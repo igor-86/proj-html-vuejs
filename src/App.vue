@@ -9,6 +9,7 @@ import NewCourses from "./components/NewCourses.vue";
 import JumboBook from "./components/JumboBook.vue";
 import BecauseCourse from "./components/BecauseCourse.vue";
 import JumboNet from "./components/JumboNet.vue";
+import StudentSay from "./components/StudentSay.vue";
 export default {
   name: "AppVue",
   data() {
@@ -26,6 +27,7 @@ export default {
     JumboBook,
     BecauseCourse,
     JumboNet,
+    StudentSay,
   },
 
 }
@@ -46,6 +48,9 @@ export default {
       <BecauseCourse />
     </section>
     <JumboNet />
+    <section>
+      <StudentSay />
+    </section>
 
   </main>
 
